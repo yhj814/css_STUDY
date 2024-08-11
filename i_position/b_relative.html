@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>position - relative</title>
+        <style>
+            #element1,
+            #element2 {
+                width: 200px;
+                height: 100px;
+            }
+
+            #element1 {
+                background-color: orange;
+                position: relative;
+            }
+
+            #element2 {
+                background-color: brown;
+                position: relative;
+            }
+
+            div.in {
+                width: 50px;
+                height: 50px;
+            }
+
+            div.e1-1 {
+                background-color: red;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
+
+            div.e1-2 {
+                background-color: violet;
+                position: absolute;
+                right: 0%;
+            }
+
+            div.e2-1 {
+                background-color: black;
+                position: absolute;
+                bottom: 0%;
+                right: 0%;
+                transform: translate(-30%);
+            }
+        </style>
+    </head>
+    <body>
+        <div id="element1">
+            <!-- (빨간색) -->
+            <div class="in e1-1"></div>
+            <!-- (핑크색) -->
+            <!-- 오른쪽에 딱 붙이기 -->
+            <div class="in e1-2"></div>
+        </div>
+        <div id="element2">
+            <!-- (검은색) -->
+            <!-- 맨 아래에 딱 붙이고 오른쪽으로 부터 30% 떨어뜨리기 -->
+            <div class="in e2-1"></div>
+        </div>
+    </body>
+</html>

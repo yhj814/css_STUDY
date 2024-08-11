@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>position 실습</title>
+        <style>
+            #image {
+                margin: 160px auto;
+                width: 430px;
+                height: 500px;
+                background-image: url("https://gangnam.koreaisacademy.com/2023/img/tch/teacher007.png");
+                background-size: 100% 100%;
+                background-repeat: no-repeat;
+                background-position: center;
+                position: relative;
+            }
+            #star {
+                position: absolute;
+                top: 0%;
+                transform: translate(72%);
+            }
+            .star {
+                width: 150px;
+                height: 150px;
+            }
+            .star_1 {
+                width: 150px;
+                height: 150px;
+            }
+            .p {
+                position: absolute;
+                width: 150px;
+                height: 150px;
+                transform: translate(-321%, 100%);
+            }
+            h1 {
+                position: absolute;
+                bottom: 0%;
+                transform: translate(250%, 1500%);
+                color: hotpink;
+            }
+            .p_1 {
+                position: absolute;
+                width: 150px;
+                height: 150px;
+                transform: translate(-305%, 289%);
+            }
+            .p_2 {
+                position: absolute;
+                width: 430px;
+                height: 500px;
+                transform: translate(-305%, 289%);
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <div id="image"></div>
+            <div id="star">
+                <img src="images/star.jpg" class="star" />
+                <img src="images/star.jpg" class="star" />
+                <img src="images/star.jpg" class="star" />
+                <img src="images/star.jpg" class="star" />
+                <img src="images/p.jpg" class="p" />
+                <img src="images/p_1.jpg" class="p_1" />
+                <img src="images/p_2.jpg" class="p_2" />
+                <h1>동석곤듀</h1>
+            </div>
+        </div>
+    </body>
+</html>

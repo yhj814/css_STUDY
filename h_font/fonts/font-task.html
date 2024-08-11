@@ -1,0 +1,41 @@
+<!-- 1. 네이버 폰트 1개 적용하기 -->
+<!-- 2. 서비스되고 있는 사이트의 폰트 찾아서 적용하기  -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://hangeul.pstatic.net/hangeul_static/css/nanum-myeongjo-eco.css"
+            rel="stylesheet"
+        />
+        <link
+            href="https://www.kakaocorp.com/page/_nuxt/css/e004d01.css"
+            rel="stylesheet"
+        />
+        <title>font-task</title>
+        <style>
+            body {
+                font-size: 500%;
+            }
+            @font-face {
+                font-family: "나눔명조에코";
+                src: url("./NanumMyeongjoEco.ttf") format("truetype");
+            }
+            h1 {
+                font-family: "나눔명조에코";
+            }
+            @font-face {
+                font-family: "카카오";
+                src: url("KakaoBig_ExtraBold_OTF.woff");
+            }
+            h2 {
+                font-family: "카카오";
+            }
+        </style>
+    </head>
+    <body>
+        <h1>네이버 폰트를 적용했습니다~~NAVER</h1>
+        <h2>카카오 폰트를 적용했습니다~~KAKAO</h2>
+    </body>
+</html>
